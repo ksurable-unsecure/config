@@ -1,0 +1,12 @@
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa-stable" . "https://stable.melpa.org/packages/"))
+
+;; Configure Helm. This requires installing the helm package
+;; https://github.com/emacs-helm/helm
+(global-set-key (kbd "M-x") 'helm-M-x)
+(global-set-key (kbd "C-x C-f") #'helm-find-files)
+(global-set-key (kbd "C-x b") 'helm-mini)
+
+;; Configure auto-complete. This requires installing the auto-complete package
+(ac-config-default)
