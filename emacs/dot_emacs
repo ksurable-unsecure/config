@@ -7,6 +7,8 @@
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-x C-f") #'helm-find-files)
 (global-set-key (kbd "C-x b") 'helm-mini)
+(defalias 'hag' helm-do-grep-ag)
+(defalias 'hoc' helm-occur)
 
 ;; Configure auto-complete. This requires installing the auto-complete package
 (ac-config-default)
