@@ -1,6 +1,12 @@
+;; Recommended packages to install
+;; helm - Incremental completion and selection narrowing framework
+;; auto-complete - Fuzzy completion
+;; {lsp-mode,company-lsp,ccls,yasnippet} - Code navigation and completion
+
+(add-to-list 'package-archives'("melpa" . "https://melpa.org/packages/"))
+;;(add-to-list 'package-archives'("melpa-stable" . "https://stable.melpa.org/packages/"))
+
 (require 'package)
-(add-to-list 'package-archives
-             '("melpa-stable" . "https://stable.melpa.org/packages/"))
 
 ;; Configure Helm. This requires installing the helm package
 ;; https://github.com/emacs-helm/helm
